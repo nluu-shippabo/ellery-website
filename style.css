@@ -1,0 +1,115 @@
+body {
+    font-family: 'Fredoka One', cursive, sans-serif;
+    margin: 0;
+    background: linear-gradient(135deg, #ffd1dc, #b2f7ef);
+    color: #333;
+    text-align: center;
+}
+
+.hero {
+    padding: 60px 20px;
+    background: url('https://via.placeholder.com/1200x400?text=Face+Painting') center/cover no-repeat;
+    color: white;
+}
+
+.logo {
+    font-size: 3em;
+    margin: 0 0 10px;
+    text-transform: uppercase;
+}
+
+.tagline {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.cta {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #1abc9c;
+    color: white;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.about, .gallery, .booking, .contact {
+    padding: 40px 20px;
+}
+
+.icons img {
+    margin: 10px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.gallery .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.booking form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.booking label {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.booking input, .booking textarea {
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.booking button {
+    padding: 10px;
+    background: #1abc9c;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+    color: purple;
+    font-weight: bold;
+}
+
+.social img {
+    margin: 0 5px;
+    border-radius: 50%;
+}
+
+footer {
+    background: #f8b400;
+    padding: 20px;
+    color: white;
+}
+
+.disclaimer {
+    margin: 0 0 10px;
+    font-size: 0.9em;
+}
+
+@media (max-width: 600px) {
+    .logo {
+        font-size: 2em;
+    }
+    .hero {
+        padding: 40px 20px;
+    }
+}
