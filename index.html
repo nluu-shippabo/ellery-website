@@ -1,1 +1,157 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Splash!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@1.6.5/dist/flowbite.min.js"></script>
+    <style>
+        body { font-family: 'Fredoka One', 'Comic Sans MS', cursive; }
+    </style>
+</head>
+<body class="text-gray-800">
+    <header class="bg-gradient-to-br from-pink-400 to-purple-400 text-center text-white py-16">
+        <h1 class="text-6xl md:text-8xl drop-shadow">color splash!</h1>
+        <h2 class="text-2xl md:text-3xl mt-2">Making smiles more colorful since 2025</h2>
+        <a href="#booking" class="mt-6 inline-block bg-teal-400 hover:bg-teal-500 text-white rounded-full px-6 py-3 text-xl" aria-label="Book your session">Book Your Session</a>
+    </header>
 
+    <main>
+        <section id="about" class="py-12 bg-pink-100 text-center">
+            <h2 class="text-3xl mb-4">About Us</h2>
+            <p class="max-w-xl mx-auto mb-6">We are two 12 year old entrepreneurs that want to share our love for face painting with other kids! Whether it's a birthday party, school carnival, or a family festival, we bring bright smiles and colorful designs to every event.</p>
+            <div class="flex justify-center space-x-6">
+                <img src="https://dummyimage.com/100x100/ffccff/000000&text=%F0%9F%A6%8B" alt="Butterfly design" class="rounded-full">
+                <img src="https://dummyimage.com/100x100/ccffcc/000000&text=%F0%9F%90%B9" alt="Capybara design" class="rounded-full">
+                <img src="https://dummyimage.com/100x100/ccffff/000000&text=%F0%9F%95%B7" alt="Spiderman design" class="rounded-full">
+            </div>
+        </section>
+
+        <section id="gallery" class="py-12 bg-cyan-50">
+            <h2 class="text-3xl mb-4 text-center">Gallery</h2>
+            <div id="gallery-carousel" class="relative w-full" data-carousel="slide">
+                <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="https://source.unsplash.com/featured/?facepaint,princess" class="absolute block w-full h-full object-cover" alt="Princess">
+                    </div>
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="https://source.unsplash.com/featured/?facepaint,superhero" class="absolute block w-full h-full object-cover" alt="Superhero">
+                    </div>
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="https://source.unsplash.com/featured/?facepaint,tiger" class="absolute block w-full h-full object-cover" alt="Tiger">
+                    </div>
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="https://source.unsplash.com/featured/?facepaint,butterfly" class="absolute block w-full h-full object-cover" alt="Butterfly">
+                    </div>
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="https://source.unsplash.com/featured/?facepaint,clown" class="absolute block w-full h-full object-cover" alt="Clown">
+                    </div>
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="https://source.unsplash.com/featured/?facepaint,capybara" class="absolute block w-full h-full object-cover" alt="Capybara">
+                    </div>
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="https://source.unsplash.com/featured/?facepaint,cat" class="absolute block w-full h-full object-cover" alt="Cat">
+                    </div>
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="https://source.unsplash.com/featured/?facepaint,spiderman" class="absolute block w-full h-full object-cover" alt="Spiderman">
+                    </div>
+                </div>
+                <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+                    <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                    </span>
+                </button>
+                <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+                    <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                    </span>
+                </button>
+            </div>
+        </section>
+
+        <section id="testimonials" class="py-12 bg-yellow-50 text-center">
+            <h2 class="text-3xl mb-8">Testimonials</h2>
+            <div class="space-y-6 max-w-3xl mx-auto">
+                <div class="bg-white p-4 rounded-lg shadow">
+                    <p class="text-yellow-400 text-lg">★★★★★</p>
+                    <p class="mt-2">"Color Splash made my daughter's party unforgettable!" - Amy</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow">
+                    <p class="text-yellow-400 text-lg">★★★★★</p>
+                    <p class="mt-2">"The kids loved every design and couldn't stop smiling." - Juan</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow">
+                    <p class="text-yellow-400 text-lg">★★★★☆</p>
+                    <p class="mt-2">"Great experience, we'll book again for our next event!" - Priya</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="booking" class="py-12 bg-yellow-100">
+            <h2 class="text-3xl text-center mb-4">Book Your Face Painting</h2>
+            <form id="booking-form" class="max-w-lg mx-auto space-y-4">
+                <label class="block text-left">
+                    Name
+                    <input type="text" name="name" class="mt-1 w-full rounded-lg border-gray-300" required>
+                </label>
+                <label class="block text-left">
+                    Email
+                    <input type="email" name="email" class="mt-1 w-full rounded-lg border-gray-300" required>
+                </label>
+                <label class="block text-left">
+                    Event Date
+                    <input type="date" name="date" class="mt-1 w-full rounded-lg border-gray-300" required>
+                </label>
+                <label class="block text-left">
+                    Type of Event
+                    <input type="text" name="type" class="mt-1 w-full rounded-lg border-gray-300" required>
+                </label>
+                <label class="block text-left">
+                    Message
+                    <textarea name="message" rows="4" class="mt-1 w-full rounded-lg border-gray-300"></textarea>
+                </label>
+                <button type="submit" class="w-full bg-teal-400 hover:bg-teal-500 text-white rounded-lg py-2 text-lg">Submit</button>
+            </form>
+            <p id="thankyou" class="hidden text-center mt-4">Thank you for your request! We'll be in touch soon.</p>
+        </section>
+
+        <section id="contact" class="py-12 bg-purple-100 text-center">
+            <h2 class="text-3xl mb-4">Contact Us</h2>
+            <p class="flex justify-center items-center space-x-2">
+                <svg class="w-6 h-6 text-purple-700" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M1.5 8.67v8.58a3 3 0 0 0 3 3h15a3 3 0 0 0 3-3V8.67l-8.928 5.493a3 3 0 0 1-3.144 0L1.5 8.67Z"/><path d="M22.5 6.908V6.75a3 3 0 0 0-3-3h-15a3 3 0 0 0-3 3v.158l9.714 5.978a1.5 1.5 0 0 0 1.572 0L22.5 6.908Z"/></svg>
+                <a href="mailto:colorsplash@example.com" class="underline">colorsplash@example.com</a>
+            </p>
+            <div class="flex justify-center space-x-6 mt-4">
+                <a href="#" aria-label="Facebook" class="text-blue-600">
+                    <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7.493 18.5c-.425 0-.82-.236-.975-.632A7.48 7.48 0 0 1 6 15.125c0-1.75.599-3.358 1.602-4.634.151-.192.373-.309.6-.397.473-.183.89-.514 1.212-.924a9.042 9.042 0 0 1 2.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 0 0 .322-1.672V2.75A.75.75 0 0 1 15 2a2.25 2.25 0 0 1 2.25 2.25c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 0 1-2.649 7.521c-.388.482-.987.729-1.605.729H14.23c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 0 0-1.423-.23h-.777ZM2.331 10.727a11.969 11.969 0 0 0-.831 4.398 12 12 0 0 0 .52 3.507C2.28 19.482 3.105 20 3.994 20H4.9c.445 0 .72-.498.523-.898a8.963 8.963 0 0 1-.924-3.977c0-1.708.476-3.305 1.302-4.666.245-.403-.028-.959-.5-.959H4.25c-.832 0-1.612.453-1.918 1.227Z"/></svg>
+                </a>
+                <a href="#" aria-label="Instagram" class="text-pink-500">
+                    <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 9a3.75 3.75 0 1 0 0 7.5A3.75 3.75 0 0 0 12 9Z"/><path fill-rule="evenodd" d="M9.344 3.071a49.52 49.52 0 0 1 5.312 0c.967.052 1.83.585 2.332 1.39l.821 1.317c.24.383.645.643 1.11.71.386.054.77.113 1.152.177 1.432.239 2.429 1.493 2.429 2.909V18a3 3 0 0 1-3 3h-15a3 3 0 0 1-3-3V9.574c0-1.416.997-2.67 2.429-2.909.382-.064.766-.123 1.151-.178a1.56 1.56 0 0 0 1.11-.71l.822-1.315a2.942 2.942 0 0 1 2.332-1.39ZM6.75 12.75a5.25 5.25 0 1 1 10.5 0 5.25 5.25 0 0 1-10.5 0Zm12-1.5a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z" clip-rule="evenodd"/></svg>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gradient-to-br from-pink-400 to-purple-400 text-white text-center pt-4 relative">
+        <div class="fixed bottom-0 left-0 w-full bg-purple-600 text-xs py-1 text-center">Disclaimer: Although we use hypoallergenic paints, please let us know about any skin sensitivities before getting painted.</div>
+        <p class="py-8">&copy; <span id="year"></span> Color Splash!</p>
+    </footer>
+
+    <script>
+        document.querySelector('.cta-button').addEventListener('click', function(e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+        });
+        document.getElementById('booking-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            this.classList.add('hidden');
+            document.getElementById('thankyou').classList.remove('hidden');
+        });
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
