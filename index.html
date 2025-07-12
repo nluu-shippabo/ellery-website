@@ -1,1 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Splash! Face Painting</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Fredoka One', cursive;
+            margin: 0;
+            padding: 0;
+            background: #ffe4f1;
+            color: #333;
+        }
+        header.hero {
+            background: linear-gradient(135deg, #ff9ad5, #9bf0ff);
+            text-align: center;
+            padding: 80px 20px;
+            color: #fff;
+        }
+        h1.logo {
+            font-size: 3em;
+            margin: 0;
+            text-transform: lowercase;
+        }
+        p.tagline {
+            font-size: 1.2em;
+            margin: 10px 0 30px;
+        }
+        button.cta {
+            background: #40e0d0;
+            border: none;
+            color: #fff;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            border-radius: 25px;
+            cursor: pointer;
+        }
+        section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        #about .icons {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        #about .icons img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        #gallery .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+        }
+        #gallery figure {
+            margin: 0;
+        }
+        #gallery img {
+            width: 100%;
+            border-radius: 15px;
+        }
+        form {
+            display: grid;
+            gap: 15px;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        input, textarea, select {
+            padding: 10px;
+            border-radius: 10px;
+            border: 1px solid #ccc;
+            font-family: inherit;
+        }
+        input[type="submit"] {
+            background: #ff9ad5;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        #contact ul {
+            list-style: none;
+            padding: 0;
+        }
+        #contact li {
+            margin: 5px 0;
+        }
+        footer {
+            background: #9bf0ff;
+            padding: 20px;
+            color: #333;
+        }
+        footer p {
+            margin: 5px 0;
+        }
+        @media (max-width: 600px) {
+            h1.logo { font-size: 2em; }
+            button.cta { font-size: 1em; }
+        }
+    </style>
+</head>
+<body>
+    <header class="hero">
+        <h1 class="logo">color splash!</h1>
+        <p class="tagline">Making smiles more colorful since 2025</p>
+        <button class="cta" onclick="document.getElementById('booking').scrollIntoView({behavior:'smooth'});">Book Your Session</button>
+    </header>
 
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We bring bright and fun face painting to parties, festivals, and school events. Our designs are quick, colorful, and sure to make you smile!</p>
+        <div class="icons">
+            <img src="https://source.unsplash.com/100x100/?butterfly" alt="Butterfly face paint">
+            <img src="https://source.unsplash.com/100x100/?capybara" alt="Capybara face paint">
+            <img src="https://source.unsplash.com/100x100/?spiderman" alt="Spiderman face paint">
+        </div>
+    </section>
+
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="grid">
+            <figure><img src="https://source.unsplash.com/200x200/?princess" alt="Princess"><figcaption>Princess</figcaption></figure>
+            <figure><img src="https://source.unsplash.com/200x200/?superhero" alt="Superhero"><figcaption>Superhero</figcaption></figure>
+            <figure><img src="https://source.unsplash.com/200x200/?tiger" alt="Tiger"><figcaption>Tiger</figcaption></figure>
+            <figure><img src="https://source.unsplash.com/200x200/?rainbow" alt="Rainbow"><figcaption>Rainbow</figcaption></figure>
+            <figure><img src="https://source.unsplash.com/200x200/?unicorn" alt="Unicorn"><figcaption>Unicorn</figcaption></figure>
+            <figure><img src="https://source.unsplash.com/200x200/?dragon" alt="Dragon"><figcaption>Dragon</figcaption></figure>
+            <figure><img src="https://source.unsplash.com/200x200/?pirate" alt="Pirate"><figcaption>Pirate</figcaption></figure>
+            <figure><img src="https://source.unsplash.com/200x200/?clown" alt="Clown"><figcaption>Clown</figcaption></figure>
+        </div>
+    </section>
+
+    <section id="booking">
+        <h2>Book a Session</h2>
+        <form id="bookingForm">
+            <input type="text" name="name" placeholder="Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="date" name="date" required>
+            <input type="text" name="event" placeholder="Type of Event" required>
+            <textarea name="message" rows="3" placeholder="Message"></textarea>
+            <input type="submit" value="Submit">
+        </form>
+        <p id="thankYou" style="display:none; color:#ff1493; font-size:1.2em;">Thank you! We'll be in touch soon.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <ul>
+            <li>Email: <a href="mailto:colorsplash@example.com">colorsplash@example.com</a></li>
+            <li>Phone: <a href="tel:+1234567890">+1 (234) 567-890</a></li>
+            <li>Facebook | Instagram</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>Always perform a patch test before full application. We are not responsible for any allergic reactions or skin sensitivity issues.</p>
+        <p>&copy; Color Splash!</p>
+    </footer>
+
+<script>
+    document.getElementById('bookingForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        this.style.display = 'none';
+        document.getElementById('thankYou').style.display = 'block';
+    });
+</script>
+</body>
+</html>
