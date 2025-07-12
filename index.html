@@ -1,1 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Splash!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <style>
+        html, body {
+            margin:0;
+            padding:0;
+            font-family: 'Fredoka One', 'Comic Sans MS', cursive;
+            color:#333;
+        }
+        a {
+            text-decoration:none;
+            color:inherit;
+        }
+        header.hero {
+            background: linear-gradient(135deg, #ff99cc, #a29bfe);
+            text-align:center;
+            padding:60px 20px;
+            color:#fff;
+        }
+        .logo {
+            font-size:70px;
+            margin:0;
+            color:#fff000;
+            text-shadow:2px 2px 4px #000;
+        }
+        .subheading {
+            font-size:24px;
+            margin:10px 0 20px;
+        }
+        .cta-button {
+            background-color:#40e0d0;
+            color:#fff;
+            padding:12px 24px;
+            border-radius:25px;
+            display:inline-block;
+            font-size:20px;
+        }
+        section {
+            padding:40px 20px;
+            text-align:center;
+        }
+        #about {
+            background:#ffe6f2;
+        }
+        #about .icons img {
+            width:80px;
+            height:80px;
+            border-radius:50%;
+            margin:10px;
+        }
+        #gallery {
+            background:#e0ffff;
+        }
+        .gallery-grid {
+            display:grid;
+            grid-template-columns:repeat(auto-fit, minmax(150px, 1fr));
+            gap:15px;
+            max-width:900px;
+            margin:0 auto;
+        }
+        .gallery-grid figure {
+            margin:0;
+        }
+        .gallery-grid img {
+            width:100%;
+            border-radius:15px;
+        }
+        #booking {
+            background:#fff5cc;
+        }
+        form {
+            max-width:500px;
+            margin:0 auto;
+            display:flex;
+            flex-direction:column;
+            gap:10px;
+        }
+        form input,
+        form textarea,
+        form button {
+            padding:10px;
+            border-radius:10px;
+            border:2px solid #ccc;
+            font-family:inherit;
+        }
+        form button {
+            background:#40e0d0;
+            border:none;
+            color:#fff;
+            font-size:18px;
+        }
+        #contact {
+            background:#f5e6ff;
+        }
+        .social-icons img {
+            width:40px;
+            height:40px;
+            margin:0 5px;
+            border-radius:10px;
+        }
+        footer {
+            background:linear-gradient(135deg, #ff99cc, #a29bfe);
+            color:#fff;
+            text-align:center;
+            padding:20px;
+            font-size:14px;
+        }
+        @media (max-width:600px) {
+            .logo { font-size:48px; }
+            .subheading { font-size:18px; }
+            .cta-button { font-size:18px; }
+        }
+    </style>
+</head>
+<body>
+    <header class="hero">
+        <h1 class="logo">color splash!</h1>
+        <h2 class="subheading">Making smiles more colorful since 2025</h2>
+        <a href="#booking" class="cta-button">Book Your Session</a>
+    </header>
 
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We bring cheerful face painting to parties, festivals, and school events. Our designs are bright, fun, and perfect for any celebration!</p>
+        <div class="icons">
+            <img src="https://dummyimage.com/100x100/ffccff/000000&text=%F0%9F%A6%8B" alt="Butterfly design">
+            <img src="https://dummyimage.com/100x100/ccffcc/000000&text=%F0%9F%90%B9" alt="Capybara design">
+            <img src="https://dummyimage.com/100x100/ccffff/000000&text=%F0%9F%95%B7" alt="Spiderman design">
+        </div>
+    </section>
+
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery-grid">
+            <figure>
+                <img src="https://dummyimage.com/300x300/ffe6e6/000000&text=Princess" alt="Princess design">
+                <figcaption>Princess</figcaption>
+            </figure>
+            <figure>
+                <img src="https://dummyimage.com/300x300/e6e6ff/000000&text=Superhero" alt="Superhero design">
+                <figcaption>Superhero</figcaption>
+            </figure>
+            <figure>
+                <img src="https://dummyimage.com/300x300/ffffe6/000000&text=Tiger" alt="Tiger design">
+                <figcaption>Tiger</figcaption>
+            </figure>
+            <figure>
+                <img src="https://dummyimage.com/300x300/e6ffe6/000000&text=Butterfly" alt="Butterfly design">
+                <figcaption>Butterfly</figcaption>
+            </figure>
+            <figure>
+                <img src="https://dummyimage.com/300x300/e6ffff/000000&text=Clown" alt="Clown design">
+                <figcaption>Clown</figcaption>
+            </figure>
+            <figure>
+                <img src="https://dummyimage.com/300x300/ffe6ff/000000&text=Capybara" alt="Capybara design">
+                <figcaption>Capybara</figcaption>
+            </figure>
+            <figure>
+                <img src="https://dummyimage.com/300x300/fff0e6/000000&text=Cat" alt="Cat design">
+                <figcaption>Cat</figcaption>
+            </figure>
+            <figure>
+                <img src="https://dummyimage.com/300x300/e6f0ff/000000&text=Spiderman" alt="Spiderman design">
+                <figcaption>Spiderman</figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <section id="booking">
+        <h2>Book Your Face Painting</h2>
+        <form id="booking-form">
+            <input type="text" name="name" placeholder="Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="date" name="date" required>
+            <input type="text" name="type" placeholder="Type of Event" required>
+            <textarea name="message" placeholder="Message" rows="4"></textarea>
+            <button type="submit">Submit</button>
+        </form>
+        <p id="thankyou" style="display:none;">Thank you for your request! We'll be in touch soon.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: <a href="mailto:colorsplash@example.com">colorsplash@example.com</a></p>
+        <p>Phone: 555-123-4567</p>
+        <div class="social-icons">
+            <img src="https://dummyimage.com/40x40/3b5998/ffffff&text=F" alt="Facebook">
+            <img src="https://dummyimage.com/40x40/e4405f/ffffff&text=I" alt="Instagram">
+        </div>
+    </section>
+
+    <footer>
+        <p class="disclaimer">Disclaimer: Although we use hypoallergenic paints, please tell us about any skin sensitivities or allergies before getting painted. Test on a small area first. Color Splash! is not liable for reactions.</p>
+        <p>&copy; Color Splash!</p>
+    </footer>
+
+    <script>
+        document.querySelector('.cta-button').addEventListener('click', function(e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({behavior: 'smooth'});
+        });
+
+        document.getElementById('booking-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            this.style.display = 'none';
+            document.getElementById('thankyou').style.display = 'block';
+        });
+    </script>
+</body>
+</html>
